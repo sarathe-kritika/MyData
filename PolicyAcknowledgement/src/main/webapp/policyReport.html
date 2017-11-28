@@ -1,0 +1,121 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/policyReport.css" />
+<script src="js/angular.min.js"></script>
+<script src="js/policyReportController.js"></script>
+<script src="js/export.js"></script>
+
+<style type="text/css">
+ 
+ .tdSpaceLogo{
+ 	 padding-left:10px;
+    padding-right: 231px; 
+}
+.policy-head {
+	background-color: #081DA5;
+	color: white
+}
+.tdsubmit{
+	padding-left: 30px;
+}
+.tdFullName{
+padding-left:50px;
+ padding-right:250px; 
+}
+
+</style>
+
+</head>
+<body ng-app="myApp" ng-controller="MyCtrl" style="background-color: #fff">
+
+				<table width="100%" cellspacing="0" id="">
+					<tr class="policy-head">
+						<td class="tdSpaceLogo"><img class="" src="image/Parkar.png" alt="Smiley face"></td>
+						
+						<td class="tdFullName" style="white-space: nowrap;"><h2 align="center">Welcome {{full_name}}</h2></td>
+						<td class="tdsubmit"><input type="submit" name="Sign Out" value="Sign Out" ng-click="SignOut()"/></td>
+					</tr>
+				</table>
+<div>
+
+<!-- <div >
+  <input id="search-user" type="text" placeholder="Search by user Name" ng-model="searchText.username">
+  <input type="text" placeholder="Search status" ng-model="searchText.status"><br><br>
+  </div> -->
+	<input Type="button" VALUE="Back" onClick="history.go(-1);return true;"/>
+   <input id="search-user" type="text" placeholder="Search by user Name" ng-model="q.username" style="border: 2px solid #2E3EA6">
+  <input id="search-status" type="text" placeholder="Search status" ng-model="q.statusPolicy" style="border: 2px solid #2E3EA6">
+  
+    <select ng-model="pageSize" id="pageSize" class="search3" style="border: 2px solid #2E3EA6; width:100px;">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="{{totalData}}">Show All</option>
+     </select>
+     <!--<ul>
+        <li ng-repeat="item in data | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+            {{item}}
+        </li>
+    </ul> -->
+   
+  
+    
+    <table style="background-color: #fff;border: 1px solid #2E3EA6" align="center" id="my-table">
+   <thead>
+    <th class="thStyle">Employee Code</th>
+    <th class="thStyle">Name</th>
+    <th class="thStyle">UserName</th>
+    <th class="thStyle">General Policy Status</th>
+    <th class="thStyle">NDA Policy Status</th>
+    <th class="thStyle">Date and Time</th>
+   </thead>
+   <tbody>
+   
+    <tr ng-repeat="item in data | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize" >
+     
+     <td class="tdStyle">{{item.employee_code}}
+     </td>
+     <td class="tdStyle">{{item.full_name}}
+     </td>
+     <td class="tdStyle">{{item.username}}
+     </td>
+     <td class="tdStyle">{{item.statusNda}}
+     </td>
+     <td class="tdStyle">{{item.statusPolicy}}
+     </td>
+     <td class="tdStyle">{{item.date}}
+     </td>
+    </tr>
+   <tbody>
+  </table>
+   <!--  paginationButtonNext
+    paginationButtonPrevius -->
+    
+    
+   <!--  <button class="paginationButtonNext" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        <<
+    </button>
+    <p class="paginationCount">{{currentPage+1}}/{{numberOfPages()}}</p>
+    <button class="paginationButtonPrevius" ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1">
+       >>
+    </button> -->
+    
+    
+    <button class="paginationButtonNext" ng-disabled="currentPage >= getData().length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        >>
+    </button>
+    <p class="paginationCount">{{currentPage+1}}/{{numberOfPages()}}</p>
+    <button class="paginationButtonPrevius" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+       <<
+    </button>
+    
+    <a id="btn-export" style="display: none;"></a>
+  <button class="exportButton" onclick="exportTable('my-table', 'PolicyAcknowledgementReport', 'btn-export')">Export</button>
+ 
+ 
+    
+</div>
+
+</body>
+</html>

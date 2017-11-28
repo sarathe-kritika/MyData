@@ -1,0 +1,31 @@
+<p-dataTable [value]="cars3"  rowGroupMode="subheader" groupField="brand"  expandableRowGroups="true"
+   [sortableRowGroup]="false">
+  <header>Toggleable Row Groups with Footers</header>
+  <template pTemplate="rowgroupheader" let-rowData>{{rowData['brand']}}</template>
+  <p-column field="color" header="Color"></p-column>
+  <p-column field="year" header="Year"></p-column>
+  <p-column field="vin" header="Vin"></p-column>
+</p-dataTable>
+
+
+<p-dataTable [value]="cars2">
+  <header>
+    <div style="text-align:left">
+      <p-multiSelect [options]="columnOptions2" [(ngModel)]="cols2"></p-multiSelect>
+    </div>
+  </header>
+  <p-column *ngFor="let col of cols2" [field]="col.field" [header]="col.header"></p-column>
+</p-dataTable>
+
+
+<p-dataTable [value]="cars1">
+  <p-column *ngFor="let col of cols1" [field]="col.field" [header]="col.header" [filter]="col.filter"></p-column>
+</p-dataTable>
+
+
+<p-dataTable [value]="cars">
+  <p-column field="vin" header="{{'Vin'|translate}}"></p-column>
+  <p-column field="year" header="{{'Year'|translate}}"></p-column>
+  <p-column field="brand" header="{{'Brand'|translate}}"></p-column>
+  <p-column field="color" header="{{'Color'|translate}}"></p-column>
+</p-dataTable>

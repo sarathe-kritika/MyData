@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+
+<script src="js/policyController.js"></script>
+
+<meta charset="ISO-8859-1">
+<title>General Policy Page</title>
+</head>
+<body class="policy">
+<div ng-app ="myApp"  ng-controller="myControllerPolicy">
+
+ <!-- <li ng-if="username == 'kritika.sarathe'"> 
+        <h1>Yoooooooooooooo</h1>
+    </li>
+ -->
+ <h2>&nbsp;&nbsp;&nbsp;&nbsp; Welcome {{full_name}}</h2>
+<div class="policy-form">
+
+<form ng-submit="saveStatus()"  method ='post'>
+
+<table>
+<thead><tr><th>General Policies</th><th>Download</th></tr></thead>
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Advance Salary.pdf" target="_blank">Advance Salary</a>
+</td>
+<td align="center">
+<a href="policy/Advance Salary.pdf" download="policy/Advance Salary.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Attendance and Shift Allowance Policy.pdf" target="_blank">Attendance and Shift Allowance Policy</a>
+</td>
+<td align="center">
+<a href="policy/Attendance and Shift Allowance Policy.pdf" download="policy/Attendance and Shift Allowance Policy.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Compensation and Benefits.pdf" target="_blank">Compensation and Benefits</a>
+</td>
+<td align="center">
+<a href="policy/Compensation and Benefits.pdf" download="policy/Compensation and Benefits.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Dress Code Policy.pdf" target="_blank">Dress Code Policy</a>
+</td>
+<td align="center">
+<a href="policy/Dress Code Policy.pdf" download="policy/Dress Code Policy.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Employee Referral Program.pdf" target="_blank">Employee Referral Program</a>
+</td>
+<td align="center">
+<a href="policy/Employee Referral Program.pdf" download="policy/Employee Referral Program.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/General and Personal Record.pdf" target="_blank">General and Personal Record</a>
+</td>
+<td align="center">
+<a href="policy/General and Personal Record.pdf" download="policy/General and Personal Record.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Information Security Policy.pdf" target="_blank">Information Security Policy</a>
+</td>
+<td align="center">
+<a href="policy/Information Security Policy.pdf" download="policy/Information Security Policy.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Insurance claim guidlines.pdf" target="_blank">Insurance claim guidlines</a>
+</td>
+<td align="center">
+<a href="policy/Insurance claim guidlines.pdf" download="policy/Insurance claim guidlines.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Leave Policy.pdf" target="_blank">Leave Policy</a>
+</td>
+<td align="center">
+<a href="policy/Leave Policy.pdf" download="policy/Leave Policy.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Onboarding and Induction.pdf" target="_blank">Onboarding and Induction</a>
+</td>
+<td align="center">
+<a href="policy/Onboarding and Induction.pdf" download="policy/Onboarding and Induction.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/policy-Advance Salary.pdf" target="_blank">policy-Advance Salary</a>
+</td>
+<td align="center">
+<a href="policy/policy-Advance Salary.pdf" download="policy/policy-Advance Salary.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px" >
+<a style="text-decoration:none" href="policy/Prevention of Workplace Harassment Policy v.1.pdf" target="_blank">Prevention of Workplace Harassment Policy</a>
+</td>
+<td align="center">
+<a href="policy/Prevention of Workplace Harassment Policy v.1.pdf" download="policy/Prevention of Workplace Harassment Policy v.1.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+
+<tr>
+<td style="width: 350px ; height:30px">
+<a style="text-decoration:none" href="policy/Reimbursement Policy.pdf" target="_blank">Reimbursement Policy</a>
+</td>
+<td align="center">
+<a href="policy/Reimbursement Policy.pdf" download="policy/Reimbursement Policy.pdf">
+<span class="glyphicon glyphicon-download-alt"></span>
+</a>
+</td>
+</tr>
+</table><br>
+<input type="checkbox" ng-model="confirmed" ng-change="change()" id="ng-change-example1" required="required">&nbsp; Please subscribe tick in the block in token of your acceptance and admission :<br>
+<!-- {{confirmed}} -->
+I have read the contents of Parkar policies and NDA of our Company.  I have understood the same and I accept  and admit them
+
+<input type="submit"  style="margin-top:4px;!important" value="submit" ng-click="saveStatus">
+</form>
+</div>
+</div>
+</body>
+</html>

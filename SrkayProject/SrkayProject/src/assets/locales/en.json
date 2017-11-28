@@ -1,0 +1,21 @@
+{
+  "Login": "Login",
+  "Email": "Email",
+  "Password": "Password",
+  "Home": "Home",
+  "Search": "Search",
+  "Dashboard": "Dashboard",
+  "Profile": "Profile",
+  "Translate": "Translate",
+  "Year": "YearEng",
+  "Brand":"BrandEng",
+  "Vin":"VinEng",
+  "Color":"ColorEng",
+  "Maruti": "MarutiEng",
+  "BMW": "BMWEng",
+  "Honda": "HondaEng",
+  "Yellow": "YellowEng",
+  "Green": "GreenEng",
+  "Gray": "GrayEng",
+  "Red": "RedEng"
+}

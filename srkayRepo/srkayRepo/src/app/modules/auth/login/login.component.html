@@ -1,0 +1,21 @@
+<div style="width:400px; margin-top:200px; margin-left:460px">
+  <thm-card title="{{ 'LOGIN' | translate }}">
+    <div style="padding:20px">
+      <div class="row">
+        <div class="input-field col-sm-4">
+          <label for="email">{{'EMAIL' | translate }}</label>
+          <input [(ngModel)]="user.email" id="email" type="email" class="validate">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col-sm-4">
+          <label for="password">{{'PASSWORD' | translate }}</label>
+          <input [(ngModel)]="user.password" id="password" type="password" class="validate">
+        </div>
+      </div>
+
+      <button (click)="login()" class="btn btn-primary" type="submit" name="action" style="margin:20px">{{ 'LOGIN' | translate }}</button>
+    </div>
+  </thm-card>
+</div>

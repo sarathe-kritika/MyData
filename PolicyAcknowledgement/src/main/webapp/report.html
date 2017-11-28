@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+<script src="js/angular.min.js"></script>
+<script src="js/reportController.js"></script>
+</head>
+<style type="text/css">
+ 
+ .tdSpaceLogo{
+ 	 padding-left:10px;
+    padding-right: 231px; 
+}
+.policy-head {
+	background-color: #081DA5;
+	color: white
+}
+.tdsubmit{
+	padding-left: 30px;
+}
+.tdFullName{
+padding-left:50px;
+ padding-right:250px; 
+}
+
+</style>
+<style>
+
+
+
+th, td {
+    text-align: Center;
+    padding: 8px;
+}
+
+table, td, th {
+    border: 1px solid #2E3EA6;
+}
+
+  th {
+   border-width:4px; border-collapse: collapse;
+}
+
+tr:nth-child(even){background-color: #fff}
+
+th {
+    background-color: #2E3EA6;
+    color: white;
+}
+
+ .report-form{
+  width: 600px;
+  height: 430px;
+  background: #fff;
+  margin: 100px auto;
+  padding-top: 20px;
+  padding-left:20px;
+  border: 2px solid #2E3EA6;!important;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+} 
+
+
+</style>
+<body class="report">
+<table width="100%" cellspacing="0">
+					<tr class="policy-head" >
+						<td class="tdSpaceLogo"><img class="" src="image/Parkar.png" alt="Smiley face"></td>
+						<td class="tdFullName"><h3 align="center">Welcome to {{full_name}}</h3></td>
+						<td class="tdsubmit"><input type="submit" name="Sign Out" value="Sign Out" ng-click="SignOut()" /></td>
+					</tr>
+</table>
+
+<div ng-app='myApp' ng-controller='myControllerReport' >
+<!--   {{result}}
+ --> 
+  
+ <div align="center">
+ <br><br>
+ <div class="">
+  <input type="text" placeholder="Search by user Name" ng-model="searchText.username">
+  <input type="text" placeholder="Search status" ng-model="searchText.status"><br><br>
+  </div>
+  <table align="center">
+   <thead>
+    
+    <th>UserName</th>
+    <th>Full Name</th>
+    <th>General Policy Status</th>
+    <th>NDA Policy Status</th>
+    <th>Date and Time</th>
+   </thead>
+   <tbody>
+   
+    <tr ng-repeat="emp in result |filter:searchText" >
+     
+     <td>{{emp.username}}
+     </td>
+     <td>{{emp.status}}
+     </td>
+    </tr>
+   <tbody>
+  </table>
+ </div>
+ </div>
+
+</body>
+</html>

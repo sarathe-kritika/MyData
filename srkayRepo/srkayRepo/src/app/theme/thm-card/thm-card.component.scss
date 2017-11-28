@@ -1,0 +1,20 @@
+@import '../../../assets/styles/confg/confg.scss';
+
+.thm-card {
+  background-color: $color-brand-secondary;
+  border: 0;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.thm-card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color:$color-brand-primary-highlight;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.thm-card-title {}
+
+.thm-card-body {}

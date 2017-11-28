@@ -1,0 +1,21 @@
+{
+  "Login": "Login1",
+  "Email": "Email1",
+  "Password": "Password1",
+  "Home": "Home1",
+  "Search": "Search1",
+  "Dashboard": "Dashboard1",
+  "Profile": "Profile1",
+  "Translate": "Translate1",
+  "Year": "YearSpa",
+  "Brand":"BrandSpa",
+  "Vin":"VinSpa",
+  "Color":"ColorSpa",
+  "Maruti": "MarutiSpa",
+  "BMW": "BMWSpa",
+  "Honda": "HondaSpa",
+  "Yellow": "YellowSpa",
+  "Green": "GreenSpa",
+  "Gray": "GraySpa",
+  "Red": "RedSpa"
+}

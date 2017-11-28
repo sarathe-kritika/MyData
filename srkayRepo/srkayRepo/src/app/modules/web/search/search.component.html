@@ -1,0 +1,49 @@
+<div style="margin:50px">
+  <h4>
+      Search Diamonds
+  </h4>
+
+  <div class="col-sm-4">
+    <form [formGroup]="searchForm" (ngSubmit)="submitForm(searchForm.value)">
+      <div class="form-group">
+        <label>Color</label>
+        <input class="form-control" type="text" formControlName="color">
+      </div>
+      <div class="form-group">
+        <label>Shape</label>
+        <input class="form-control" type="text" formControlName="shape">
+      </div>
+      <div class="form-group">
+        <label>Quality</label>
+        <input class="form-control" type="text" formControlName="quality">
+      </div>
+      <div class="form-group">
+        <label>Size</label>
+        <input class="form-control" type="text" formControlName="size">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="bg-info">
+      <tr>
+        <th>Shape</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Quality</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let diamond of diamonds;">
+        <td>{{diamond.shape}}</td>
+        <td>{{diamond.color}}</td>
+        <td>{{diamond.size}}</td>
+        <td>{{diamond.quality}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

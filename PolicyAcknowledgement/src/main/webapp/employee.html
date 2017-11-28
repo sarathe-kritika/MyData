@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="my-empModule">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/angular.min.js"></script>
+<!-- <script src="js/addemployee.js"></script> -->
+ 
+<meta charset="ISO-8859-1">
+<title>Add New Employee Page</title>
+<style type="text/css">
+ 
+ .tdSpaceLogo{
+ 	 padding-left:10px;
+    padding-right: 231px; 
+}
+.policy-head {
+	background-color: #081DA5;
+	color: white
+}
+.tdsubmit{
+	padding-left: 30px;
+}
+.tdFullName{
+padding-left:50px;
+ padding-right:250px; 
+}
+
+</style>
+
+</head>
+<script src="js/addemployee.js"></script>
+<body ng-controller="myEmpController" style="background-color: #fff">
+<table width="100%" cellspacing="0">
+					<tr class="policy-head" >
+						<td class="tdSpaceLogo"><img class="" src="image/Parkar.png" alt="Smiley face"></td>
+						<td class="tdFullName" style="white-space: nowrap;"><h2 align="center">Welcome to {{full_name}}</h2></td>
+						<td class="tdsubmit"><input type="submit" name="Sign Out" value="Sign Out" ng-click="SignOut()" /></td>
+					</tr>
+</table>
+  <p><INPUT Type="button" style="margin-bottom:-71px;" VALUE="Back" onClick="history.go(-1);return true;"/></p>	
+  <h2 class="heading"  align="center">Add New Employee</h2>
+  <div class="addemp">
+ 
+  <form ng-submit="addEmp()"  method ='post'>
+   
+   <input type="text" placeholder="Employee Code" ng-model="employee.employee_code" required="required" Pattern="(PCG)\d{4}" title="e.g : PCG0001">
+   <input type="text" placeholder="Full name" ng-model="employee.full_name" required="required" >
+   <input type="text" placeholder="User name" ng-model="employee.username" required="required" >
+   <input type="text" placeholder="Email Id" ng-model="employee.email_id" required="required" Pattern="([a-z]|[A-Z]|[0-9])+@(parkar.consulting)" title="e.g : abc1@parkar.consulting">
+   <select ng-model="employee.role">
+   		<option value="">Select Role</option>
+  		<option value="user">user</option>
+  		<option value="admin">admin</option>
+   </select>
+   
+   <input type="submit" name="add" value="Add Employee" ng-click="addEmp" />
+  </form>
+  <h3 style="color: green" align="center" ng-if="showSucessMessage">Successfully Added</h3>
+  <h3 style="color: #FFA500" align="center" ng-if="showWarningMessage">Employee Code Already Exist</h3>
+  
+ </div>
+ <!-- <p align="center"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"/></p> -->
+
+</html>

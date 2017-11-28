@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/angular.min.js"></script>
+<script src="js/adminModule.js"></script>
+<meta charset="ISO-8859-1">
+<title>Admin page</title>
+<style type="text/css">
+ 
+ .tdSpaceLogo{
+ 	 padding-left:10px;
+    padding-right: 231px; 
+}
+.policy-head {
+	background-color: #081DA5;
+	color: white
+}
+.tdsubmit{
+	padding-left: 30px;
+}
+.tdFullName{
+padding-left:50px;
+ padding-right:250px; 
+}
+
+</style>
+</head>
+
+<body ng-controller="myControllerPolicy" style="background-color: #fff">
+	
+				<table width="100%" cellspacing="0">
+					<tr class="policy-head" >
+						<td class="tdSpaceLogo"><img class="" src="image/Parkar.png" alt="Smiley face"></td>
+						<td class="tdFullName" style="white-space: nowrap;"><h2 align="center">Welcome to {{full_name}}</h2></td>
+						<td class="tdsubmit"><input type="submit" name="Sign Out" value="Sign Out" ng-click="SignOut()" /></td>
+					</tr>
+				</table>
+  <div class="addemp">
+ 
+  <h2 style="padding-top: 0px;" class="heading"  align="center"></h2>
+  <p align="center">
+   <!-- <a ng-href='DemoPolicy.html?username={{username}}&full_name={{full_name}}'>Policy</a> --> 
+   <a href='policyReport.html?username={{username}}&full_name={{full_name}}'>Get Report</a>&nbsp;&nbsp;
+   <a href='employee.html?username={{username}}&full_name={{full_name}}'>Add New Employee</a>
+   </p>
+  
+ </div>
+</body>
+
+</html>

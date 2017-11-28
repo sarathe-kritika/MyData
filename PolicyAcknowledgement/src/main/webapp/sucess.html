@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thank You</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/angular.min.js"></script>
+<script src="js/logout.js"></script>
+</head>
+<body ng-app="logout-module" ng-controller="myControllerLogout">
+<h1 class="head1">Thank You for Submitting Your Response ...!!! </h1>
+
+<div ng-show="loggedIn" ng-cloak="" class="alert alert-success text-center"><span ng-click="loggedIn = false;" class="glyphicon glyphicon-remove pull-right"></span>
+        <h1>Success!</h1>
+      </div>
+ <input type="submit" name="Sign Out" value="Sign Out" ng-click="SignOut()"/>
+</body>
+</html>
+
+
+<!-- class="policy-head"
+<input class="search1" type="text" placeholder="Search by user Name" ng-model="q.username" style="border: 2px solid #2E3EA6">
+<input class="search2" type="text" placeholder="Search status" ng-model="q.statusPolicy" style="border: 2px solid #2E3EA6">
+<select ng-model="pageSize" id="pageSize" class="search3" style="border: 2px solid #2E3EA6">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+</select>
+<table>
+	<tr>
+	<td>
+	<input class="search1" type="text" placeholder="Search by user Name" ng-model="q.username" style="border: 2px solid #2E3EA6">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<input class="search2" type="text" placeholder="Search status" ng-model="q.statusPolicy" style="border: 2px solid #2E3EA6">
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<select ng-model="pageSize" id="pageSize" class="search3" style="border: 2px solid #2E3EA6">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+     </select>
+	</td>
+	</tr>
+</table>
+    -->

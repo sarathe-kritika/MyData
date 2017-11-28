@@ -1,0 +1,14 @@
+@import '../../../assets/styles/confg/confg.scss';
+
+.thm-header {
+  background: $color-brand-primary-highlight;
+}
+
+.check-image {
+  background: url("assets/img/image.png");
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

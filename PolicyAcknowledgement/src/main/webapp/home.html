@@ -1,0 +1,55 @@
+<html ng-app="myNg-Module">
+<head>
+<title>Employee Policy</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/angular.min.js"></script>
+<script src="js/ng-module-customize.js"></script>
+<style type="text/css">
+
+input[type="text"]{
+  display: block;
+  width: 309px;
+  height: 35px;
+  margin: 20px auto;
+  background: #fff;
+  border: 0px;
+  padding: 5px;
+  font-size: 16px;
+   border: 2px solid #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+input[type="text"]:focus{
+  border: 2px solid #2E3EA6
+}
+</style>
+
+</head>
+<body>
+ 
+ <img class="image" src="image/Parkar.png" alt="Smiley face" >
+ <h1 class="head1">Online Policies & NDA Acknowledgment Portal </h1>
+ 
+ <div class="inner-screen" ng-controller="myControllerNG">
+ 
+  <div class="form">
+  		<form ng-submit="connect()"  method ='post'>
+   			<input type="text" placeholder="Username" ng-model="user.username" required="required">
+   			<input type="password" placeholder="Password" ng-model="user.password" required="required">
+   			<select ng-model="user.role">
+   				<option value="">Select Role</option>
+  				<option value="user">User</option>
+  				<option value="admin">Admin</option>
+   			</select>
+   			<input type="submit" name="Login" value="Login" ng-click="connect"/>
+  		</form>
+  		<h3 style="color: Red" align="center" ng-if="showErrorMessageInvalidUser">Invalid UserName or Password !</h3>
+  		<h3 style="color: #FFA500" align="center" ng-if="showErrorMessageInvalidRole">You are not Admin !</h3>
+  		<h3 style="color: #FFA500" align="center" ng-if="achnowledgedUser">You have already submitted !</h3>
+  		
+ </body>
+
+</html>
