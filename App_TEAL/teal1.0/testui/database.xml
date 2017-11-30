@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="1">
+	<listeners>
+		<listener class-name="com.parkar.testng.RetryListener" />
+	</listeners>
+	<parameter name="browser" value="firefox" />
+	<parameter name="remoteDriverIP" value="localhost" />
+	<parameter name="remoteDriverPort" value="4444" />
+	<parameter name="Frontend_Server" value="https://www.amazon.in" />
+	<parameter name="Report_Loc" value="C:\Reports" />
+	<parameter name="dateFormat" value="MM/dd/yyyy" />
+	<parameter name="deepReporting" value="false" />
+	<parameter name="maxRetryCount" value="2" />
+	<parameter name="timeout" value="60" />
+	<test name="Database">
+		<packages>
+			<package name="com.parkar.database.test.*" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

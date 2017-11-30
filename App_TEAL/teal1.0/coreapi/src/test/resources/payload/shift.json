@@ -1,0 +1,45 @@
+{
+  "startDateTime" : "2016-06-16T22:30:19",
+  "commentNotes" : [ {
+    "comment" : {
+      "name" : "some comments",
+      "active" : true,
+      "id" : 20
+    }
+  }, {
+    "comment" : {
+      "name" : "another comments",
+      "active" : false,
+      "id" : 21
+    }
+  } ],
+  "employee" : {
+    "id" : 1,
+    "qualifier" : "382"
+  },
+  "endDateTime" : "2016-07-23T22:30:19",
+  "segments" : [ {
+    "workruleRef" : {
+      "id" : 2,
+      "qualifier" : "Full time"
+    },
+    "type" : "REGULAR_SEGMENT",
+    "orgJobRef" : {
+      "qualifier" : "Organization/Division 1/Facility 1/Store 2/Department 21/Register"
+    }
+  }, {
+    "workruleRef" : {
+      "qualifier" : "Part time"
+    },
+    "type" : "TRANSFER_SEGMENT",
+    "skillCertProfileRefs" : [ {
+      "test" : [ {
+        "id" : 1,
+        "active" : false
+      } ]
+    } ],
+    "orgJobRef" : {
+      "qualifier" : "Organization/Division 1/Facility 1/Store 2/Department 22/RN"
+    }
+  } ]
+}

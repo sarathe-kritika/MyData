@@ -1,0 +1,63 @@
+{  
+   "id":9514,
+   "startDateTime":"2016-05-30T07:00:00",
+   "label":"Morning",
+   "employee":{  
+      "id":178,
+      "qualifier":"396"
+   },
+   "generated":false,
+   "commentNotes":[  
+      {  
+         "id":715,
+         "comment":{  
+            "id":5,
+            "name":"Union business",
+            "active":true
+         },
+         "notes":[  
+            {  
+               "text":"People can WFH",
+               "commentNoteId":715
+            },
+            {  
+               "text":"People can WFH_2",
+               "commentNoteId":716
+            }
+         ]
+      }
+   ],
+   "segments":[  
+      {  
+         "id":26565,
+         "segmentTypeRef":{  
+            "id":1,
+            "qualifier":"REGULAR_SEGMENT"
+         },
+         "laborAccountRef":{  
+            "id":-2,
+            "qualifier":"-/-/-/-/-/-/-"
+         },
+         "userEnteredLaborAccountRef":null,
+         "primaryLaborAccountRef":{  
+            "id":-2,
+            "qualifier":"-/-/-/-/-/-/-"
+         },
+         "orgJobRef":{  
+            "id":51
+         },
+         "primaryOrgJobRef":{  
+            "id":51,
+            "qualifier":"Organization/Division 1/Facility 1/Store 2/Department 21/RN"
+         },
+         "shiftSegmentDetailTypeId":null,
+         "type":"REGULAR_SEGMENT"
+      }
+   ],
+   "relations":[  
+        {"id":123,"name":"employee"},
+        {"id":124,"name":"managere"},
+        {"id":125,"name":"consultant"}
+   ],
+   "open":false
+}

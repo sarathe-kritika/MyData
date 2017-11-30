@@ -1,0 +1,328 @@
+{
+  "shift" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number"
+      },
+      "startDateTime" : {
+        "type" : "any"
+      },
+      "endDateTime" : {
+        "type" : "any"
+      },
+      "version" : {
+        "type" : "any"
+      },
+      "label" : {
+        "type" : "string"
+      },
+      "employee" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "number"
+          },
+          "qualifier" : {
+            "type" : "string"
+          },
+          "nullReference" : {
+            "type" : "boolean",
+            "required" : true
+          }
+        }
+      },
+      "locked" : {
+        "type" : "boolean"
+      },
+      "posted" : {
+        "type" : "boolean"
+      },
+      "generated" : {
+        "type" : "boolean"
+      },
+      "commentNotes" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "number"
+            },
+            "comment" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "name" : {
+                  "type" : "string"
+                },
+                "active" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "notes" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "text" : {
+                    "type" : "string"
+                  },
+                  "timestamp" : {
+                    "type" : "any"
+                  },
+                  "dataSourceDisplayName" : {
+                    "type" : "string"
+                  },
+                  "dataSourceId" : {
+                    "type" : "number"
+                  },
+                  "commentNoteId" : {
+                    "type" : "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "segments" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "id" : {
+              "type" : "number"
+            },
+            "segmentTypeRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "startDateTime" : {
+              "type" : "any"
+            },
+            "endDateTime" : {
+              "type" : "any"
+            },
+            "laborAccountRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "userEnteredLaborAccountRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "userEnteredLaborAccount" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "transferLaborAccount" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "primaryLaborAccountRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "orgJobRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "userEnteredOrgJob" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "transferOrgJob" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "primaryOrgJobRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "workruleRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "userEnteredWorkrule" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "transferWorkrule" : {
+              "type" : "boolean",
+              "required" : true
+            },
+            "primaryWorkruleRef" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "skillCertProfileRefs" : {
+              "type" : "array",
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "id" : {
+                    "type" : "number"
+                  },
+                  "qualifier" : {
+                    "type" : "string"
+                  },
+                  "nullReference" : {
+                    "type" : "boolean",
+                    "required" : true
+                  }
+                }
+              }
+            },
+            "shiftSegmentDetailTypeId" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "type" : {
+              "type" : "string",
+              "enum" : [ "REGULAR_SEGMENT", "TRANSFER_SEGMENT", "BREAK_SEGMENT" ]
+            }
+          }
+        }
+      },
+      "open" : {
+        "type" : "boolean",
+        "required" : true
+      },
+      "relations" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "from" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "qualifier" : {
+                  "type" : "string"
+                },
+                "nullReference" : {
+                  "type" : "boolean",
+                  "required" : true
+                }
+              }
+            },
+            "type" : {
+              "type" : "string",
+              "enum" : [ "FROM_GROUPITEM_TO_ITEM", "FROM_PCE_TO_ORIGINAL_SHIFT", "FROM_PCE_TO_CURRENT_SHIFT", "FROM_PATTERNITEM_TO_ITEM", "FROM_SHIFTTEMPLATE_TO_SHIFT" ]
+            },
+            "active" : {
+              "type" : "boolean",
+              "required" : true
+            }
+          }
+        }
+      }
+    }
+  }
+}

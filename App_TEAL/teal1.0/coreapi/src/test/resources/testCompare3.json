@@ -1,0 +1,85 @@
+{  
+    "open":false,
+   "startDateTime":"2016-05-30T07:00:00",
+   "endDateTime":"2016-05-30T13:00:00",
+   "version":"2016-07-01T09:05:28",
+   "label":"Morning",
+   "employee":{  
+      "id":178,
+      "qualifier":"396"
+   },
+   "locked":true,
+   "posted":true,
+   "generated":false,
+   "commentNotes":[  
+      {  
+         "id":715,
+         "comment":{  
+            "id":5,
+            "name":"Union business",
+            "active":true
+         },
+         "notes":[  
+            {  
+               "text":"People can WFH",
+               "timestamp":"2016-07-01T09:04:59",
+               "dataSourceDisplayName":"TKCSOWNER",
+               "dataSourceId":1,
+               "commentNoteId":715
+            }
+         ]
+      }
+   ],
+   "segments":[  
+      {  
+         "id":26565,
+         
+         "startDateTime":"2016-05-30T08:00:00",
+         "endDateTime":"2016-05-30T12:00:00",
+         "laborAccountRef":{  
+            "id":-2,
+            "qualifier":"-/-/-/-/-/-/-"
+         },
+         "userEnteredLaborAccountRef":null,
+         "userEnteredLaborAccount":false,
+         "transferLaborAccount":false,
+         "primaryLaborAccountRef":{  
+            "id":-2,
+            "qualifier":"-/-/-/-/-/-/-"
+         },
+         "orgJobRef":{  
+            "id":51,
+            "qualifier":"Organization/Division 1/Facility 1/Store 2/Department 21/RN"
+         },
+         "userEnteredOrgJob":true,
+         "transferOrgJob":false,
+         "primaryOrgJobRef":{  
+            "id":51,
+            "qualifier":"Organization/Division 1/Facility 1/Store 2/Department 21/RN"
+         },
+         "workruleRef":{  
+            "id":7,
+            "qualifier":"Support"
+         },
+         "userEnteredWorkrule":false,
+         "transferWorkrule":false,
+         "primaryWorkruleRef":{  
+            "id":7,
+            "qualifier":"Support"
+         },
+         "skillCertProfileRefs":[  
+
+         ],
+         "shiftSegmentDetailTypeId":null,
+         "type":"REGULAR_SEGMENT",
+         "segmentTypeRef":{  
+            "id":1,
+            "qualifier":"REGULAR_SEGMENT"
+         }
+      }
+   ],
+   "relations":[  
+
+   ],
+   "id":9514
+}

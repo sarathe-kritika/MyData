@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="1">
+       <parameter name="browser" value="Chrome" />
+       <parameter name="Backend_Server" value="http://localhost:9090/OrderManagement" />
+       <parameter name="Report_Loc" value="C:\\Reports\\" />
+       <parameter name="dateFormat" value="MM/dd/yyyy" />
+       <parameter name="deepReporting" value="true" />
+       <parameter name="timeout" value="30" />
+       <test name="Test">
+               <groups>
+                     <run>
+                         <include name="TEAL"/>
+                     </run>
+              </groups> 
+              <packages>
+                     <package name="com.parkar.tests.*" />
+              </packages>
+       </test> <!-- Test -->
+</suite> <!-- Suite -->
+

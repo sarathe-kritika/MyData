@@ -1,0 +1,49 @@
+{
+  "startDateTime" : "TODAYT22:30:19",
+  "commentNotes" : [ {
+    "comment" : {
+      "name" : "some comments",
+      "active" : true,
+      "id" : 20
+    },
+    "notes": [
+    	{"text": "People can WFH"}
+    ]
+  }, {
+    "comment" : {
+      "name" : "another comments",
+      "active" : false,
+      "id" : 21
+    }
+  } ],
+  "employee" : {
+    "id" : 1,
+    "qualifier" : "382"
+  },
+  "endDateTime" : "-10MT22:30:19",
+  "segments" : [ {
+  	"startDateTime" : "+2SUNDAY2M-10d2yT11:24:20",
+    "workruleRef" : {
+      "id" : 2,
+      "qualifier" : "Full time"
+    },
+    "type" : "REGULAR_SEGMENT",
+    "orgJobRef" : {
+      "qualifier" : "Organization/Division 1/Facility 1/Store 2/Department 21/Register"
+    }
+  }, {
+    "workruleRef" : {
+      "qualifier" : "Part time"
+    },
+    "type" : "TRANSFER_SEGMENT",
+    "skillCertProfileRefs" : [ {
+      "test" : [ {
+        "id" : 1,
+        "active" : false
+      } ]
+    } ],
+    "orgJobRef" : {
+      "qualifier" : "Organization/Division 1/Facility 1/Store 2/Department 22/RN"
+    }
+  } ]
+}
